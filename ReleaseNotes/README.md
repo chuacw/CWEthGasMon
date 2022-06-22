@@ -27,7 +27,7 @@ To build the solution, you'll need to place an .env file in the GasApp/conf subd
 
 *WARNING*: Do not run the build script before you have a .env file in the conf subdirectory.  
 
-There is a sample.env file that is nearly complete, located in the GasApp/conf subdirectory. Just get an Etherscan API key and place it there, then rename your sample.env to .env and place it in the conf file.
+There is a sample.env file that is nearly complete, located in the GasApp/conf subdirectory. Just get an Etherscan API key and place it there, then rename your sample.env to .env. 
 
 When the build script is run, this does the following:
  * Switches into the GasApp subdirectory.
