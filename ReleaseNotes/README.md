@@ -61,6 +61,9 @@ You have to do so in a new shell window.
 
 ![Stopping the solution](./images/2022-06-22%2018_28_38-Stop.png)
 
+Cleaning up the solution
+===
+If you no longer wish to run the solution, call the clean.cmd script to clean up the generated Docker images. 
 
 Testing the solution as an end user
 ===

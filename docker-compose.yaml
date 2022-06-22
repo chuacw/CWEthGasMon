@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   node:
-    image: node
+    image: cwethgasmon_node
     container_name: CWEthGasMon
     ports:
     - '3000:3000'
@@ -13,7 +13,7 @@ services:
         ipv4_address: 172.16.1.3
     
   redis:
-    image: redis:latest
+    image: cwethgasmon_redis
     container_name: redis_container
     ports:
     - '6379:6379'
