@@ -23,11 +23,11 @@ To build the solution, you're required to have Docker, Nodejs and TypeScript ins
 
 Building the solution
 ===
-To build the solution, you'll need to place an .env file in the conf subdirectory of the GasApp subdirectory, and run the build.cmd script.
+To build the solution, you'll need to place an .env file in the GasApp/conf subdirectory, and run the build.cmd script.
 
 *WARNING*: Do not run the build script before you have a .env file in the conf subdirectory.  
 
-There is a sample.env file that is nearly complete. Just get an Etherscan API key and place it there, then rename your sample.env to .env and place it in the conf file.
+There is a sample.env file that is nearly complete, located in the GasApp/conf subdirectory. Just get an Etherscan API key and place it there, then rename your sample.env to .env and place it in the conf file.
 
 This does the following:
  * Switches into the GasApp subdirectory.
@@ -154,7 +154,7 @@ The test script needs the database container to be running in order to work succ
 
 Development platform
 ===
-This solution was developed using TypeScript and Nodejs v14.17.0 on Windows.
+This solution was developed using TypeScript, Nodejs v14.17.0 and Docker Desktop v4.9.1 on Windows and tested with Docker Desktop v3.2.0 on another system.
 
 Future
 ===
