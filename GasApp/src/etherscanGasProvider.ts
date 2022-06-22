@@ -17,7 +17,7 @@ const ETHERSCAN_API_ENDPOINT = "/api?"
  *
  * @type {string}
  */
-const ETHERSCAN_GAS_PROVIDER_URL = `https://api.etherscan.io${ETHERSCAN_API_ENDPOINT}`
+const ETHERSCAN_GAS_PROVIDER_URL = `https://api.etherscan.io`
 /**
  * The Etherscan gas provider
  * @date 21/06/2022 - 4:56:09 pm
@@ -36,7 +36,7 @@ class EtherscanGasProvider extends BaseGasProvider {
      */
     constructor() {
         super(ETHERSCAN_GAS_PROVIDER_URL)
-        this.setGasProviderURL(this.GAS_PROVIDER_URL)
+        this.setGasProviderURL(ETHERSCAN_GAS_PROVIDER_URL)
         this.API_KEY = ""
     }
 

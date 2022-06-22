@@ -1,1 +1,1 @@
-See the README.md in ReleasNotes
+See the README.md in ReleaseNotes
