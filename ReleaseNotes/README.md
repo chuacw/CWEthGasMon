@@ -150,7 +150,7 @@ Testing the solution as a developer
 ===
 The tests are Jests unit tests that cover most scenarios foreseeable and do not achieve 100% coverage.
 
-To run the tests, launch the test.cmd script. 
+To run the tests, launch the test.cmd script after running the build script. 
 
 The test script needs the database container to be running in order to work successfully.
 
