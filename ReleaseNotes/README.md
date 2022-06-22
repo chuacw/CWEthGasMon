@@ -23,7 +23,11 @@ To build the solution, you're required to have Docker, Nodejs and TypeScript ins
 
 Building the solution
 ===
-To build the solution, run the build.cmd script.  
+To build the solution, you'll need to place an .env file in the conf subdirectory of the GasApp subdirectory, and run the build.cmd script.
+
+*WARNING*: Do not run the build script before you have a .env file in the conf subdirectory.  
+
+There is a sample.env file that is nearly complete. Just get an Etherscan API key and place it there, then rename your sample.env to .env and place it in the conf file.
 
 This does the following:
  * Switches into the GasApp subdirectory.
