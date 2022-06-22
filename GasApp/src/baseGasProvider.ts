@@ -2,7 +2,9 @@ import { DB_Result } from "./db_types"
 import { GasProviderIntf } from "./gasProviderTypes"
 
 /**
- * The base class for gas providers
+ * The base class for gas providers.
+ * Implementing a new gas provider by extending from this class.
+ * See how to do so by looking at the {@link EtherscanGasProvider} class.
  * @date 21/06/2022 - 4:54:02 pm
  *
  * @class BaseGasProvider

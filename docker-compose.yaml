@@ -2,11 +2,16 @@ version: '1.0'
 services:
   node:
     image: node
-    container_name: my-node-app
+    container_name: CWEthGasMon
     ports:
     - '3000:3000'
+    - '3001:3001'
     depends_on:
     - "redis"
+    networks:
+      CWEthGasMon_subnet:
+        ipv4_address: 172.16.1.3
+    
   redis:
     image: redis:latest
     container_name: redis_container
@@ -14,3 +19,15 @@ services:
     - '6379:6379'
     volumes:
     - ./redis_data:/var/lib/redis
+    networks:
+      CWEthGasMon_subnet:
+        ipv4_address: 172.16.1.4
+
+networks:
+  CWEthGasMon_subnet:
+    external: true
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.16.1.0/24
+         gateway: 172.16.1.1

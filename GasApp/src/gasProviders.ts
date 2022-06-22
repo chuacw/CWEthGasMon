@@ -55,6 +55,10 @@ function getDefaultGasProvider(): BaseGasProvider {
   return result
 }
 
+/**
+ * Resets the default gas provider so that it's undefined
+ * @date 22/06/2022 - 5:53:39 pm
+ */
 function resetDefaultGasProvider() {
   G_PROVIDER_NAME = undefined
 }

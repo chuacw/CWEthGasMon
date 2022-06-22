@@ -54,7 +54,13 @@ class EtherscanGasProvider extends BaseGasProvider {
     public async getProviderGasPrice() {
         const result: DB_Result = await super.getProviderGasPrice()
         const url = `${this.gasProviderURL}module=gastracker&action=gasoracle&apikey=${this.API_KEY}`
-        const tempResult = await axios.get(url)
+        const tempResult = await axios.get(url, {
+            headers: {
+                'cache-control': 'no-cache',
+                'Pragma': 'no-cache',
+                'Expires': '0',
+            }
+        })
         if ((tempResult.status == BaseGasProvider.HTTP_OK) &&
             (tempResult.statusText == BaseGasProvider.S_OK)) {
             try {

@@ -1,1 +1,3 @@
-See the README.md in ReleaseNotes
+See [README.md](./ReleaseNotes/README.md) in the ReleaseNotes subdirectory.
+
+

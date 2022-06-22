@@ -24,6 +24,8 @@ interface BaseLogIntf {
 
 /**
  * An abstract base class for a log provider
+ * Implementing a new log provider by extending from this class.
+ * See how to do so by looking at the {@link ConsoleLogProvider} class.
  * @date 22/06/2022 - 2:08:00 pm
  *
  * @abstract

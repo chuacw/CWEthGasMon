@@ -10,7 +10,7 @@ import { log } from './logProviders';
  *
  * @type {*}
  */
-const GClient = createClient();
+let GClient = createClient();
 /**
  * Whether the redis client is connected
  * @date 21/06/2022 - 4:57:05 pm
@@ -209,6 +209,24 @@ async function putValue(key_blockNum: BigNumberish, gasPrices: GasPrices): Promi
     return result
 }
 
+/**
+ * Sets the URL to be used for the redis client
+ * Do not use if the client has already started usage
+ * @date 22/06/2022 - 5:45:35 pm
+ *
+ * @param {string} redis_url
+ */
+async function setRedisURL(redis_url: string) {
+    if (GClient) {
+        try {
+            await disconnect()
+        } catch(e) {
+            log("Exception when trying to disconnect", e)
+        }
+    }
+    GClient = createClient({url: redis_url})
+}
+
 export {
     createDbClient,
     connect,
@@ -218,4 +236,5 @@ export {
     getExistKey,
     getValue,
     putValue,
+    setRedisURL
 }
