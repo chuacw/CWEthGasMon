@@ -29,7 +29,7 @@ To build the solution, you'll need to place an .env file in the GasApp/conf subd
 
 There is a sample.env file that is nearly complete, located in the GasApp/conf subdirectory. Just get an Etherscan API key and place it there, then rename your sample.env to .env and place it in the conf file.
 
-This does the following:
+When the build script is run, this does the following:
  * Switches into the GasApp subdirectory.
  * Pulls in all required Node modules
  * Calls TypeScript to compile the code.
