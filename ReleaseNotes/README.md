@@ -103,7 +103,7 @@ The configuration file lets the user do the folowing:
 * Configure which log provider to use (There's only one choice now)
 * Specifies the URL to be used for the database client to connect to the database server. 
 
-It has the following modules:
+The solution has the following logical modules:
 
 * GasProvider
 * LogProvider  
