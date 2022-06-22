@@ -152,9 +152,9 @@ The tests are Jests unit tests that cover most scenarios foreseeable and do not 
 
 To run the tests, launch the test.cmd script after running the build script. 
 
-The test script needs the database container to be running in order to work successfully.
+The test script needs the database container to be running in order to work successfully and will launch the database container.
 
-![Testing the solution with tests](./images/2022-06-22%2019_06_40-Running%20tests.png)
+![Testing the solution with tests](./images/2022-06-22%2022_04_50-Running%20tests.png)
 
 
 Development platform
