@@ -1,6 +1,5 @@
 import { BaseGasProvider } from "./baseGasProvider"
 import { EtherscanGasProvider } from "./etherscanGasProvider"
-import { EthGasStationProvider } from "./ethGasStationProvider"
 
 /**
  * The default provider to use

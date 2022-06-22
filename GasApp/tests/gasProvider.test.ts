@@ -1,9 +1,7 @@
 import { EtherscanGasProvider } from "../src/etherscanGasProvider"
-import { EthGasStationProvider } from "../src/ethGasStationProvider"
 import { getDefaultGasProvider, setDefaultGasProvider } from "../src/gasProviders"
 
 jest.mock('../src/etherscanGasProvider') // etherscanGasProvider is now a mock constructor
-jest.mock("../src/ethGasStationProvider")
 
 describe('test Base Gas Provider', () => {
 
