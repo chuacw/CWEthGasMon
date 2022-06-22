@@ -44,12 +44,12 @@ When the build script is run, this does the following:
 A screenshot is shown below on what it looks like to build the solution.
 ![Building the solution](./images/2022-06-22%2018_19_29-Build.png)
 
- Running the solution
- ===
- To run the solution, simply call the start.cmd script.  
- Note: You have to run start.cmd instead of just start as there is a Start executable on Windows.  
+Running the solution
+===
+To run the solution, simply call the start.cmd script.  
+Note: You have to run start.cmd instead of just start as there is a Start executable on Windows.  
 
- This launches two Docker containers from the images created in the building section above.
+This launches two Docker containers from the images created in the building section above.
 
 ![Running the solution](./images/2022-06-22%2018_24_07-Start.png)
 
@@ -64,6 +64,8 @@ You have to do so in a new shell window.
 Cleaning up the solution
 ===
 If you no longer wish to run the solution, call the clean.cmd script to clean up the generated Docker images. 
+
+*WARNING* The solution needs to stop running first before you run the clean script.
 
 Testing the solution as an end user
 ===
