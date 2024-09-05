@@ -163,7 +163,7 @@ This solution was developed using TypeScript, Nodejs v14.17.0 and Docker Desktop
 
 Future
 ===
-This solution was built with as a REST server, with the gas provider as Etherscan and the database as Redis.
+This solution was built as a REST server, with the gas provider as Etherscan and the database as Redis.
 
 With more time available, the following can be investigated.
 
